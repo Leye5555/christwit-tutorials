@@ -1,0 +1,82 @@
+.box {
+  background-color: rgb(226, 226, 226);
+  min-height: 130vh;
+  position: relative;
+  padding-bottom: 1000px;
+}
+
+/* Positions */
+
+/**
+  1. static position
+  2. relative position
+  3. absolute position
+  4. sticky position
+  5. fixed position
+*/
+
+.static {
+  position: static;
+  width: 300px;
+  height: 300px;
+  background-color: rgb(0, 255, 149);
+  border: 1px solid black;
+}
+
+.relative {
+  /*  it serves as an anchor or limiter for other positions except fixed. It also gives you access to Top, Right, Bottom, Left */
+  /* maintains flow of content*/
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background-color: rgb(0, 208, 255);
+  border: 1px solid black;
+  left: 500px;
+  top: 0px;
+}
+
+.absolute {
+  /*  it serves as an anchor or limiter for other positions except fixed. It also gives you access to Top, Right, Bottom, Left */
+  /*does not maintain flow of content*/
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-color: rgb(255, 0, 238);
+  border: 1px solid black;
+  bottom: 0px;
+}
+
+.sticky-wrap {
+  position: relative;
+  background-color: rgb(104, 104, 249);
+}
+
+.sticky-wrap p {
+  max-width: 800px;
+  position: relative;
+  top: -300px;
+}
+
+.sticky {
+  /*  it serves as an anchor or limiter for other positions except fixed. It also gives you access to Top, Right, Bottom, Left */
+  /* maintains flow of content to a degree*/
+  position: sticky;
+  width: 300px;
+  height: 300px;
+  background-color: rgb(255, 153, 0);
+  border: 1px solid black;
+  left: 1000px;
+  top: 100px;
+}
+
+.fixed {
+  /*  it serves as an anchor or limiter for other positions except fixed. It also gives you access to Top, Right, Bottom, Left */
+  /* does not maintain flow of content*/
+  position: fixed;
+  width: 300px;
+  height: 300px;
+  background-color: rgb(202, 230, 160);
+  border: 1px solid black;
+  left: 1300px;
+  top: 0px;
+}

@@ -1,0 +1,33 @@
+div.container {
+  border: 1px solid black;
+  padding: 16px;
+  border-radius: 6px;
+  width: max-content;
+  margin: auto;
+}
+
+div.content {
+  max-width: 800px;
+  margin: auto;
+  border: 5px solid grey;
+  padding: 16px;
+  position: relative;
+}
+p {
+  font-size: 32px;
+  color: #000000;
+}
+
+.target {
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+  font-size: 24px;
+  background-color: rgb(57, 13, 99);
+  padding: 24px;
+  border: none;
+  color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+}

@@ -1,0 +1,68 @@
+.box {
+  width: 100%;
+  min-height: 120vh;
+  background-color: rgb(238, 238, 238);
+  position: relative;
+  top: 0;
+  padding-bottom: 500px;
+}
+
+/* positions */
+
+/* static */
+
+.static {
+  /* default position*/
+  width: 200px;
+  height: 200px;
+  border: 1px solid;
+  background-color: aquamarine;
+  position: static;
+  left: 500px;
+}
+.relative {
+  /* helps serve as an anchor for other positions and it gives access to top, right, bottom, left*/
+  /* preserves white space */
+  width: 200px;
+  height: 200px;
+  border: 1px solid;
+  background-color: rgb(255, 127, 255);
+  position: relative;
+  left: 500px;
+  top: 0px;
+  bottom: 0px;
+  margin-bottom: 50px;
+}
+
+.absolute {
+  /* helps serve as an anchor for other positions and it gives access to top, right, bottom, left*/
+  /* does not preserve*/
+  width: 200px;
+  height: 200px;
+  border: 1px solid;
+  background-color: rgb(127, 157, 255);
+  position: absolute;
+  left: 500px;
+  top: 0px;
+}
+
+.sticky-wrap {
+  position: relative;
+  background-color: blueviolet;
+}
+
+.sticky-wrap p {
+  max-width: 500px;
+}
+
+.sticky {
+  /* helps serve as an anchor for other positions and it gives access to top, right, bottom, left*/
+  /* does not preserve*/
+  width: 200px;
+  height: 200px;
+  border: 1px solid;
+  background-color: rgb(127, 157, 255);
+  position: sticky;
+  left: 700px;
+  top: 300px;
+}

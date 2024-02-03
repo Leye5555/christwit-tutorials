@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+body {
+  border: 10px solid black;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+header {
+  border-bottom: 10px solid black;
+}
+.navigation {
+  display: grid;
+  grid-template-columns: repeat(7, auto);
+  max-width: max-content;
+  gap: 24px;
+}
+
+.navigation li {
+  font-size: 22px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.navigation li:hover {
+  font-size: 22px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 600;
+  opacity: 0.3;
+  transition: all 0.3s;
+}
+
+.navigation__item a {
+  color: black;
+  text-decoration: none;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 0.8fr 1.3fr 3fr;
+}
+
+.container div {
+  text-align: center;
+  padding: 30px;
+  border: 1px solid;
+}
+
+.container .logo {
+  border-right: 8px solid black;
+  border-bottom: 10px solid black;
+  padding: 20px;
+}
+
+.container .author {
+  display: grid;
+  gap: 48px;
+  place-content: center;
+
+  background-color: #f4efde;
+  border: none;
+  transition: all 0.3s;
+}
+
+.author a {
+  color: black;
+  text-underline-offset: 5px;
+  font-size: 24px;
+}
+.author h1 {
+  box-sizing: border-box;
+  width: max-content;
+  padding: 0;
+  margin: 0;
+  font-size: 36px;
+}
+.author:hover {
+  background-color: #000;
+  color: #f4efde;
+  transition: all 0.3s;
+}
+
+.author:hover a {
+  color: #f4efde;
+  text-decoration: none;
+}

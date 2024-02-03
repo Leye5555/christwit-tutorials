@@ -1,0 +1,35 @@
+.container {
+  height: 100vh;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  flex: 1; /* flex grow | flex shrink | flex basis */
+  border: 1px solid green;
+  min-height: 200px;
+}
+.container h1 {
+  font-size: 150px;
+  color: red;
+  max-width: 700px;
+  text-align: center;
+}
+
+.box1 {
+  flex: 0.5;
+  background-color: blueviolet;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.box2 {
+  flex: 0.2;
+  background-color: rgb(0, 238, 255);
+  order: 1;
+}

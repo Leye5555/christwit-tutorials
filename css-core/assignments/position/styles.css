@@ -1,0 +1,158 @@
+/* font face */
+@font-face {
+  font-family: "ogg-regular";
+  src: url(./assets/ogg/Ogg-Regular-BF646c18fc465e5.ttf);
+}
+
+@font-face {
+  font-family: "ogg-light-italic";
+  src: url(./assets/ogg/Ogg-LightItalic-BF646c18fc49421.otf);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "ogg-regular", sans-serif;
+}
+header {
+  width: 100%;
+  height: max-content;
+  position: relative;
+}
+
+header .logo-wrap {
+  margin-top: 60px;
+  margin-left: 56px;
+}
+
+.styled-nav {
+  position: fixed;
+  top: -60px;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  animation: nav-anim 700ms ease-in-out forwards;
+}
+
+@keyframes nav-anim {
+  0% {
+    top: -60px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+.nav-item {
+  width: 50px;
+  height: 0px;
+  top: -60px;
+  padding-block: 60px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-item span:first-child {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  display: block;
+  max-width: max-content;
+}
+
+.nav-item span:last-child {
+  rotate: 90deg;
+  font-size: larger;
+}
+.nav-item__left {
+  background-color: rgb(94, 163, 236);
+  animation: left-nav 800ms 300ms ease-in-out forwards;
+}
+.nav-item__middle {
+  background-color: rgb(246, 68, 68);
+  animation: middle-nav 800ms 150ms ease-in-out forwards;
+}
+.nav-item__right {
+  background-color: rgb(255, 180, 0);
+  animation: right-nav 800ms ease-in-out forwards;
+}
+
+.hero h1 {
+  max-width: 60%;
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased !important;
+  margin-left: 56px;
+  margin-top: 100px;
+  line-height: 86px;
+}
+
+.hero h1 a {
+  text-decoration: none;
+  color: black;
+  line-height: 70px;
+  background-image: repeating-linear-gradient(
+      -45deg,
+      #ffb400,
+      #ffb400 1px,
+      transparent 0px,
+      transparent 12px
+    ),
+    repeating-linear-gradient(
+      45deg,
+      #ffb400,
+      #ffb400 1px,
+      transparent 0px,
+      transparent 12.1px
+    );
+  background-repeat: repeat-x;
+  background-position: 0% 90%, 1px 90%;
+  background-size: 17px 10px;
+  animation: flow 0.8s linear infinite;
+}
+
+@keyframes flow {
+  0% {
+    background-position-x: 0, 1px;
+  }
+  100% {
+    background-position-x: 15px, 16px;
+  }
+}
+
+@keyframes left-nav {
+  0% {
+    height: 0px;
+    top: -60px;
+  }
+  100% {
+    height: 100vh;
+    top: 0px;
+  }
+}
+
+@keyframes middle-nav {
+  0% {
+    height: 0px;
+    top: -60px;
+  }
+  100% {
+    height: 100vh;
+    top: 0px;
+  }
+}
+@keyframes right-nav {
+  0% {
+    height: 0px;
+    top: -60px;
+  }
+  100% {
+    height: 100vh;
+    top: 0px;
+  }
+}

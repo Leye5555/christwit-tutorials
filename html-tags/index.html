@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Christwit HTML Tag Demo</title>
+    <!-- <style>
+      html,
+      body {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        width: 100vw;
+        height: 100vh;
+      }
+      .container {
+        height: 100%;
+        width: 100%;
+      }
+      /* .container * {
+        border: 1px solid black;
+      } */
+      header {
+        background-color: aqua;
+        height: 80px;
+        box-sizing: border-box;
+        padding-top: 20px;
+      }
+      .logo {
+        display: inline-block;
+        margin-left: 30px;
+        padding-top: 8px;
+      }
+      .navigation {
+        float: right;
+        margin: 0px;
+        padding: 0;
+        padding-top: 10px;
+      }
+      li {
+        display: inline-block;
+        margin: 0 50px 0 0;
+      }
+
+      .container-2 {
+        height: calc(100vh - 80px - 80px);
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 48px;
+      }
+
+      .container-2 > *:first-child,
+      .container-2 > *:last-child {
+        flex: 0.2;
+        height: 100%;
+      }
+      .container-2 > main {
+        flex: 0.6;
+        height: 100%;
+        background-color: bisque;
+      }
+
+      .container-2 > *:first-child > aside {
+        height: 50%;
+      }
+      .aside-1 {
+        background-color: blueviolet;
+      }
+      .aside-2 {
+        background-color: gray;
+      }
+      .container-2 > *:last-child > aside:first-child {
+        height: 50%;
+        background-color: rgb(109, 144, 49);
+      }
+      .container-2 > *:last-child > aside ~ aside {
+        height: 50%;
+        background-color: rgb(49, 144, 117);
+      }
+
+      footer {
+        background-color: rgba(0, 255, 255, 0.427);
+        height: 80px;
+        box-sizing: border-box;
+        padding-top: 20px;
+      }
+      footer > * {
+        display: inline-block;
+        margin-right: 300px;
+      }
+      footer ul {
+        margin-right: 0;
+      }
+    </style> -->
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <div class="logo">
+            <img src="/assets/logo.svg" alt="christwit logo" />
+          </div>
+          <ul type="none" class="navigation">
+            <li>Link1</li>
+            <li>Link2</li>
+            <li>Link3</li>
+            <li>Link4</li>
+          </ul>
+        </nav>
+      </header>
+      <div class="container-2">
+        <div>
+          <aside class="aside-1">Ad1</aside>
+          <aside class="aside-2">Ad2</aside>
+        </div>
+
+        <main>main</main>
+        <div>
+          <aside>Info</aside>
+          <aside>Info</aside>
+        </div>
+      </div>
+      <footer>
+        <div class="logo">
+          <img src="/assets/logo.svg" alt="christwit logo" />
+        </div>
+        <p>All rights reserved &copy; 2023</p>
+        <ul type="none">
+          <li>f</li>
+          <li>li</li>
+          <li>int</li>
+          <li>x</li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>
