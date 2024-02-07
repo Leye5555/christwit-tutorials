@@ -12,3 +12,20 @@ function toggleNavigation(event) {
     menuBtn.setAttribute("data-state", "open");
   }
 }
+
+const prev = document.getElementById("prev");
+const next = document.getElementById("next");
+const firstName = document.getElementById("firstName");
+const lastName = document.getElementById("lastName");
+
+prev.addEventListener("click", submitForm);
+next.addEventListener("click", submitForm);
+function submitForm(e) {
+  e.preventDefault();
+  const user = {
+    first_name: firstName.value,
+    last_name: lastName.value,
+  };
+  // storage
+  window.localStorage.setItem("user-data", JSON.stringify(user));
+}
