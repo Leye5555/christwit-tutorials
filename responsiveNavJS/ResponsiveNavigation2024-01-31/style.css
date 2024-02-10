@@ -87,7 +87,7 @@ form {
 #step1,
 #step2 {
   border-radius: 50%;
-  background-color: rgb(13, 217, 13);
+  background-color: rgb(177, 177, 177);
   color: white;
   min-width: 30px;
   min-height: 30px;
@@ -96,8 +96,9 @@ form {
   align-items: center;
 }
 
-#step2 {
-  background-color: rgb(177, 177, 177);
+.form--active#form1 #step1,
+.form--active#form2 #step2 {
+  background-color: rgb(13, 217, 13);
 }
 
 #step1::after {
@@ -116,6 +117,19 @@ form {
   color: black;
 }
 
+.error-message {
+  border: 1px solid red !important;
+  border-radius: 6px !important;
+}
+.error-message::placeholder {
+  color: red !important;
+}
+
+.error-message + span {
+  color: red;
+  display: block;
+}
+
 .line {
   height: 1px;
   width: 100px;
@@ -130,7 +144,8 @@ form {
 }
 
 #prev,
-#next {
+#next,
+#sign-up {
   height: 44px;
   width: 100%;
 }
@@ -146,7 +161,8 @@ form {
   display: flex;
 }
 
-#next {
+#next,
+#sign-up {
   background-color: rgb(13, 217, 13);
   border: 1px solid rgb(13, 217, 13);
   color: white;
