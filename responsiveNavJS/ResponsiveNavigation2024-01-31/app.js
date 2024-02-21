@@ -46,6 +46,7 @@ if (window.location.href === dashboardPage) {
   }
 
   const prev = document.getElementById("prev");
+  const prev1 = document.getElementById("prev1");
   const next = document.getElementById("next");
   const signUp = document.getElementById("sign-up");
   const firstName = document.getElementById("firstName");
@@ -70,6 +71,7 @@ if (window.location.href === dashboardPage) {
   setInitialFormFields();
 
   prev.addEventListener("click", submitForm);
+  prev1.addEventListener("click", submitForm);
   next.addEventListener("click", submitForm);
   signUp.addEventListener("click", submitForm);
 
@@ -134,6 +136,10 @@ if (window.location.href === dashboardPage) {
       form1.classList.toggle("form--active"); // remove if present
       form2.classList.toggle("form--active"); // add if not present
     } else if (id === "prev") {
+      // change form
+      form1.classList.toggle("form--active"); // remove if present
+      form2.classList.toggle("form--active"); // add if not present
+    } else if (id === "prev1") {
       // change form
       form1.classList.toggle("form--active"); // remove if present
       form2.classList.toggle("form--active"); // add if not present

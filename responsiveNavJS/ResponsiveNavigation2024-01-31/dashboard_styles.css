@@ -1,0 +1,25 @@
+.hero {
+  display: flex;
+}
+
+.hero-text,
+.hero-img {
+  color: white;
+}
+
+.hero-img {
+  height: 400px;
+  width: 400px;
+  transform: rotate(45deg);
+  overflow: hidden;
+  border-radius: 50px;
+}
+
+.hero-img img {
+  transform: rotate(-45deg) translate(-50px, -250px);
+  height: 150%;
+}
+
+.hero-text {
+  max-width: 50%;
+}
